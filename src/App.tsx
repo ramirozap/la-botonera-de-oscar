@@ -47,7 +47,8 @@ function App() {
       {Object.keys(audioFiles).map((key) => (
         <button
           onClick={() => play(audioFiles[key].path)}
-          style={{ background: audioFiles[key].color }}
+          className="sheep"
+          style={{ color: audioFiles[key].color }}
         >
           {key}
         </button>

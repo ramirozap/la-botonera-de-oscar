@@ -14,15 +14,29 @@ body {
   border: none;
   color: white;
   font-size: 1.5rem;
+  outline: none;
 }
 
 .App > button::before {
   content: "";
-  padding-bottom: 45%;
+  padding-bottom: 12%;
   display: block;
 }
 .App > button::after {
   content: "";
-  padding-bottom: 45%;
+  padding-bottom: 75%;
   display: block;
+}
+
+.App > button:focus {
+  outline: 0 !important;
+}
+
+.sheep {
+  cursor: pointer;
+  background-image: url('../src/images/sheep.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
 }
